@@ -1,9 +1,9 @@
 """
-A simple script that tries to buy an amount of USDC with ARS in small chunks
+A simple script that tries to buy an amount of RPC with ARS in small chunks
 config.json requires the value api_key like
 {"api_key": "...."}
-Example buy 1000 USDC pay max 180 pesos per USD doing 100 USDC chunks:
-python buy_usdc.py config.json 1000 180 100
+Example buy 1000 RPC pay max 180 pesos per USD doing 100 RPC chunks:
+python ...py config.json 1000 180 100
 """
 import json
 import os
@@ -85,7 +85,7 @@ def run(API_KEY, amount_to_buy, limit, chunk):
                 time.sleep(WAIT_BETWEEN_TRADES)
                 break
 
-    print("WOOHOO DONE COMPRE: %s USDC" % total_bought)
+    print("WOOHOO DONE COMPRE: %s RPC" % total_bought)
 
 if __name__ == "__main__":
     load_dotenv()
