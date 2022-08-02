@@ -17,7 +17,7 @@ import requests
 
 from utils import retry
 
-PAIR = "RPC/ARS"
+PAIR = "RPC/USDC"
 NORMAL_WAIT = 10
 WAIT_BETWEEN_TRADES = 30
 MIN_ORDER = 10
@@ -100,9 +100,9 @@ if __name__ == "__main__":
     chunk = float(sys.argv[3])
 
     print("""CONFIRM:
-Buying: %s USDC
-Limit price: %s ARS
-Chunk size: %s USDC
+Buying: %s RPC
+Limit price: %s USDC
+Chunk size: %s RPC
 """ % (amount, limit, chunk))
     if input("confirm y/n: ") == "y":
         print()
