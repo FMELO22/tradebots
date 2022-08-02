@@ -42,3 +42,4 @@ write it to a .env file
 `` conda activate tradebots ``
 
 `` python buy_usdc.py 5000 330 50 ``
+`` python buy_rpc.py 10000 0,008 50 ``
